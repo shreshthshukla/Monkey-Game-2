@@ -27,15 +27,15 @@ function preload(){
 function setup() {
   createCanvas(windowWidth,windowHeight);
   
-  bk=createSprite(width/4,height-200)
+  bk=createSprite(width/3,height/2)
   bk.addImage(bkI);
   bk.scale=1.5;
   
-  monkey = createSprite(width/3-100,height-100,20,20);
+  monkey = createSprite(width/3-100,height/2+120,20,20);
   monkey.addAnimation("moving",monkey_running);
   monkey.scale=0.15;
 
-  ground = createSprite(width/4-50,height-50,width,10);
+  ground = createSprite(width/3-50,height/2+150,width,10);
   ground.visible=false;
   
   

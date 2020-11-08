@@ -35,7 +35,7 @@ function setup() {
   monkey.addAnimation("moving",monkey_running);
   monkey.scale=0.15;
 
-  ground = createSprite(width-265,height-50,width,10);
+  ground = createSprite(width/3-80,height-50,width,10);
   ground.visible=false;
   
   
@@ -60,7 +60,7 @@ background("white");
    
    bk.velocityX=-10;
    if(bk.x<0){
-     bk.x=bk.width/2;
+     bk.x=bk.width/2+200;
      
    }
    

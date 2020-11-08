@@ -31,7 +31,7 @@ function setup() {
   bk.addImage(bkI);
   bk.scale=1.3;
   
-  monkey = createSprite(width-400,height-100,20,20);
+  monkey = createSprite(100,height-100,20,20);
   monkey.addAnimation("moving",monkey_running);
   monkey.scale=0.15;
 
@@ -60,7 +60,7 @@ background("white");
    
    bk.velocityX=-10;
    if(bk.x<0){
-     bk.x=bk.width-400;
+     bk.x=400;
      
    }
    

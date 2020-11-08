@@ -60,7 +60,7 @@ background("white");
    
    bk.velocityX=-10;
    if(bk.x<0){
-     bk.x=bk.width/3;
+     bk.x=bk.width-50;
      
    }
    

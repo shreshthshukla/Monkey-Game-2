@@ -117,7 +117,7 @@ function food(){
 }
 function objects(){
   if(frameCount%180===0){
-    var obstacle=createSprite(width+20,height/2+120,20,20)
+    var obstacle=createSprite(width+20,height/3+120,20,20)
     obstacle.addImage(obstacleImage);
     obstacle.scale=0.18;
     obstacle.velocityX=-10-score/2;

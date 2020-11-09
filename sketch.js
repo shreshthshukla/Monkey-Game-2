@@ -27,7 +27,7 @@ function preload(){
 function setup() {
   createCanvas(windowWidth,windowHeight);
   
-  bk=createSprite(width/3,height/2)
+  bk=createSprite(width/2,height/2,width,20)
   bk.addImage(bkI);
   bk.scale=1.5;
   
@@ -60,14 +60,14 @@ background("white");
    
    bk.velocityX=-10;
    if(bk.x<0){
-     bk.x=bk.width-50;
+     bk.x=bk.width/2+100;
      
    }
    
-   if(touches.length>0||keyDown("space")&& monkey.y>=352.95){
+   if(touches.length>0||keyDown("space")&& monkey.y>=325.95){
      monkey.velocityY=-15;
      touches=[];
-   }
+   }   
    monkey.velocityY=monkey.velocityY+0.8;
   console.log(monkey.y);
    
@@ -117,7 +117,7 @@ function food(){
 }
 function objects(){
   if(frameCount%180===0){
-    var obstacle=createSprite(width+20,height-85,20,20)
+    var obstacle=createSprite(width+20,height/2+120,20,20)
     obstacle.addImage(obstacleImage);
     obstacle.scale=0.18;
     obstacle.velocityX=-10-score/2;

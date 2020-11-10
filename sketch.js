@@ -64,7 +64,7 @@ background("white");
      
    }
    
-   if(touches.length>0||keyDown("space")&& monkey.y>=325.95){
+   if(touches.length>0||keyDown("space")&& monkey.y>=395.95){
      monkey.velocityY=-15;
      touches=[];
    }   
@@ -100,7 +100,7 @@ background("white");
   stroke("grey");
   textSize(20);
   strokeWeight(2);
-  text(""+score,width/7,height/6);
+  text("Score "+score,width/7,height/6);
 //  text(mouseX+" , "+mouseY,200,200);
     
  
